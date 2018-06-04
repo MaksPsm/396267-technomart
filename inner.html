@@ -4,52 +4,52 @@
 <meta charset="utf-8">
 <title>Перфораторы в магазине Техномарт</title>
 <meta name="description" content="Большой выбор перфораторов по низким ценам">
-<link rel="Stylesheet" type="text/css" href="catalog.css">
+<link rel="stylesheet"  href="/css/inner.css">
 </head>
 <body>
 
-<header class="main-heder">
+  <header class="main-heder">
    
-    <section class="heder-top">
+    <div class="header-top">
         <a class="logo-company" href="logo.html"><img src="img/logo.png" alt="Логотип магазина"></a> 
-            <form class="search" action="https://../ru" method="get">
-               <label>Поиск:</label>
-               <input name="search" type="text">
-            </form>
-        <a class="bookmarks" href="bookmark.html">Закладки:</a>
-        <a class="basket" href="basket.html">Корзина:</a>   
+        <form class="search" action="https://../ru" method="get">
+             <label>Поиск:</label>
+             <input name="search" type="text">
+        </form>
+        <a class="bookmarks" href="bookmarks.html">Закладки:</a>
+        <a class="cart" href="cart.html">Корзина:</a>   
         <div class="order">
             <a href="order.html">Оформить заказ</a>
         </div>
-        </section>
+     </div>
         
-        <section class="heder-center">
-            <p class="caption">Интернет-магазин строительных материалов и инструмента для ремонта</p>
-            <div class="phone">
-                <span class="tube">//</span>
-                <p class="number">+7(812)555-05-05</p>
-            </div>
-            <p class="address-heder">г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8</p>
-            <a class="" href="">Равшан Джамшутович</a><!--надо заменить-->
-            <a class="personal-data" href="order.html"><u>Мои заказы</u></a>
-            <a class="personal-data" href="personal_area.html"><u>Мои заказы</u></a>
-        </section>
+     <div class="header-center">
+         <p class="caption">Интернет-магазин строительных материалов и инструмента для ремонта</p>
+         <div class="phone">
+             <span class="tube">//</span>
+             <p class="number">+7(812)555-05-05</p>
+          </div>
+          <p class="address-header">г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8</p>
+          <a class="" href="">Равшан Джамшутович</a><!--надо заменить-->
+          <a class="personal-data" href="order.html"><u>Мои заказы</u></a>
+          <a class="personal-data" href="personal_area.html"><u>Мои заказы</u></a>
+     </div>
         
-        <nav class="menu-basic">
-            <ul class="heder-navigation">
-                <li><a href="home.html">Главная</a></li>
-                <li><a href="company.html">Компания</a></li>
-                <li><a href="catalog.html">Каталог</a></li>
-                <li><a href="news.html">Новости</a></li>
-                <li><a href="special.html">Спецпредложения</a></li>
-                <li><a href="delivery.html">Доставка</a></li>
-                <li><a href="Contact.html">Контакты</a></li>
-            </ul>
-        </nav>
+     <nav class="navigation">
+          <ul class="navigation-list">
+              <li class="navigation-item"><a href="index.html">Главная</a></li>
+              <li class="navigation-item"><a href="company.html">Компания</a></li>
+              <li class="navigation-item"><a href="catalog.html">Каталог</a></li>
+              <li class="navigation-item"><a href="news.html">Новости</a></li>
+              <li class="navigation-item"><a href="special.html">Спецпредложения</a></li>
+              <li class="navigation-item"><a href="delivery.html">Доставка</a></li>
+              <li class="navigation-item"><a href="contacts.html">Контакты</a></li>
+          </ul>
+     </nav>
         
-</header>  
+ </header>  
 
-<main class="container">
+ <main>
    
    <ul class="bread-crumbs">
       <li><a class="bread-item" href="catalog.html">КАТАЛОГ</a></li>
@@ -72,7 +72,7 @@
    
    <div class="sorting">
           <h2 class="filter-text">СОРТИРОВКА:</h2>
-           <ul class="sorting-item">
+          <ul class="sorting-item">
                <li>по цене</li>
                <li><a href="form-type-tools"><u>по типу</u></a></li>
                <li><a href="form-function-tools"><u>по функционалу</u></a></li>
@@ -113,15 +113,15 @@
                  <p class="old-price"><del>30500 P.</del></p>
                  <a class="button-price" href="bfg6000.html">22500 P.</a>
              </div> 
-          <div class="goods-item-new">
+          <div class="goods-item new">
                  <img src="bfg6000.png" alt="Перфоратор BOSCH BFG 6000">
                  <p class="name-item">Перфоратор BOSCH BFG 6000</p>
                  <p class="old-price"><del>30500 P.</del></p>
                  <a class="button-price" href="bfg6000.html">22500 P.</a>
           </div>
-           <div class="goods-item-new">
-                 <form class="goods-basket" action="basket.html" method="post"> <!--изменить адрес-->
-       <input class="button-basket" type="button" name="goods-basket" value="купить">
+           <div class="goods-item new">
+                 <form class="goods-cart" action="cart.html" method="post"> <!--изменить адрес-->
+       <input class="button-cart" type="button" name="goods-cart" value="купить">
                  </form>
                  <form class="goods-bookmark" action="bookmark.html" method="post">  <!--изменить адрес-->
        <input class="button-bookmark" type="button" name="goods-bookmark" value="В закладки">
@@ -155,20 +155,20 @@
     <h2 class="description-item">ПАРА СЛОВ ПЕРФОРАТОРАХ</h2>
     <p>Перфоратор - универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче. бетоне и камне. Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментом ряду есть выбор "трехрежимников": в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
 
-</main>
+ </main>
    
-   <footer class="main-footer">
+ <footer class="main-footer">
    
-    <nav class="menu-info">
+    <div class="menu-info">
          <a class="logo-company"><img src="img/logo.png" alt="Логотип магазина"></a>
          <ul class="list-info">
                 <li><a href="company.html">Компания</a></li>
                 <li><a href="news.html">Новости</a></li>
                 <li><a href="catalog.html">Каталог</a></li>
                 <li><a href="delivery.html">Доставка</a></li>
-                <li><a href="Contact.html">Контакты</a></li>
-            </ul>
-    </nav>
+                <li><a href="contacts.html">Контакты</a></li>
+         </ul>
+    </div>
     
     <div class="footer-center">
         <p class="address-heder">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>+7(812)555-05-55</p>
@@ -180,7 +180,7 @@
         </ul>
     </div>
     
-    <section class="footer-bottom">
+    <div class="footer-bottom">
         <div class="copyright">
            <p class="bottom-text"> © 2010-2017 Компания "Техномарт"<br>
             Все права защищены</p>
@@ -188,7 +188,7 @@
         <div class="social-btn">
             <ul>
                 <li><a class="social-btn" href="#">В контакте</a></li>
-                <li><a class="social-btn" href="#">Fecebook</a></li>
+                <li><a class="social-btn" href="#">Facebook</a></li>
                 <li><a class="social-btn" href="#">Инстаграм</a></li>
             </ul>
         </div>
@@ -198,9 +198,9 @@
         <div class="made-in">
             <p class="bottom-text">Разработано - <br>htmlacademy.ru</p>
         </div>
-    </section>
+    </div>
     
-</footer>    
+ </footer>    
 
-    </body>
+</body>
 </html>
