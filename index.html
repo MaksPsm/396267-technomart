@@ -13,10 +13,10 @@
     <header class="main-header">
 
         <div class="header-top">
-            <a class="logo-company"><img src="img/logo.png" width="220" height="47" title="Логотип компании Техномарт" alt="Техномарт"></a>
-            <form class="search" action="https://../ru" method="get">
+            <a class="logo-company" href="logo.html" alt="Техномарт"></a>
+            <form class="search" action="https://technomart.ru/echo" method="get">
                 <label>Поиск:</label>
-                <input name="search" type="text">
+                <input name="search" type="search">
             </form>
             <a class="bookmark" href="bookmark.html">Закладки:</a>
             <a class="cart" href="cart.html">Корзина:</a>
@@ -79,7 +79,8 @@
         <div class="catalog-in">
             <p class="hit">ПЕРФОРАТОРЫ</p>
             <p class="hit-man">Настоящие мужские игрушки</p>
-            <img src="img/puncher.jpg" width="620" height="266" title="Слайд с профессиональным перфоратором" alt="Перфоратор в работе"> <!--слайдер: как делать пока не знаю/ и надо ли этой фотографии давать класс?-->
+            <img src="img/puncher.jpg" width="620" height="266" title="Слайд с профессиональным перфоратором" alt="Перфоратор в работе">
+            <!--слайдер: как делать пока не знаю/ и надо ли этой фотографии давать класс?-->
             <a class="button-details" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
             <span class="button gallery-button-back">Назад</span>
             <span class="button gallery-button-next">Вперед</span>
@@ -95,25 +96,25 @@
                     <img src="/img/bfg9000.png" width="220" height="150" title="Перфоратор BOSCH BFG 9000 по цене 25500 рублей" alt="Перфоратор BOSCH BFG 9000">
                     <p class="name-item">Перфоратор BOSCH BFG 9000</p>
                     <p class="old-price"><del>32500 P.</del></p>
-                    <a class="button-price" href="bfg9000.html"><img src="img/red-button.svg" width="141" height="38">25500 P.</a>
+                    <a class="button-price" href="bfg9000.html">25500 P.</a>
                 </li>
                 <li class="goods-item">
                     <img src="/img/bfg3000.png" width="220" height="150" title="Перфоратор BOSCH BFG 3000 по цене 15500 рублей" alt="Перфоратор BOSCH BFG 3000">
                     <p class="name-item">Перфоратор BOSCH BFG 3000</p>
                     <p class="old-price"><del>22500 P.</del></p>
-                    <a class="button-price" href="bfg3000.html"><img src="img/red-button.svg" width="141" height="38">15500 P.</a><!--то же вопрос по классу для изображения: может надо дать такой же класс у ссылке (или вообще вместо классы ссылки?)-->
+                    <a class="button-price" href="bfg3000.html">15500 P.</a>
                 </li>
                 <li class="goods-item">
                     <img src="/img/bfg6000.png" width="220" height="150" title="Перфоратор BOSCH BFG 6000 по цене 22500 рублей" alt="Перфоратор BOSCH BFG 6000">
                     <p class="name-item">Перфоратор BOSCH BFG 6000</p>
                     <p class="old-price"><del>30500 P.</del></p>
-                    <a class="button-price" href="bfg6000.html"><img src="img/red-button.svg" width="141" height="38">22500 P.</a>
+                    <a class="button-price" href="bfg6000.html">22500 P.</a>
                 </li>
                 <li class="goods-item new">
-                    <img src="/img/bfg2000.png" width="220" height="150" title="Перфоратор BOSCH BFG 2000 по цене 12500 рублей"  alt="Перфоратор BOSCH BFG 2000">
+                    <img src="/img/bfg2000.png" width="220" height="150" title="Перфоратор BOSCH BFG 2000 по цене 12500 рублей" alt="Перфоратор BOSCH BFG 2000">
                     <p class="name-item">Перфоратор BOSCH BFG 2000</p>
                     <p class="old-price"><del></del></p>
-                    <a class="button-price" href="bfg2000.html"><img src="img/red-button.svg" width="141" height="38">12500 P.</a>
+                    <a class="button-price" href="bfg2000.html">12500 P.</a>
                 </li>
             </ul>
         </section>
@@ -157,7 +158,7 @@
             <h3 class="services-delivery">Доставка</h3>
             <span class="services-delivery span-text">ДОСТАВКА</span>
             <p class="services-delivery main-text">Мы с удовольствием доставим ваш товар прямо<br>к вашему подъезду совершенно бесплатно!<br>Ведь мы неплохо заработаем,<br>поднимая его на ваш этаж!</p>
-            <img src="/img/delivery.png" width="468" height="261" alt="Бесплатная быстрая доставка"><!--Здесь должен быть слайдер, пока нет ясности как ео делать-->
+            <img src="/img/delivery.png" width="468" height="261" alt="Бесплатная быстрая доставка">
             <h3 class="services-guarantee">Гарантия</h3>
             <h3 class="services-credit">Кредит</h3>
         </section>
@@ -176,7 +177,7 @@
         <section class="contact">
             <h2 class="contact-caption">КОНТАКТЫ</h2>
             <p class="contact-caption text-anons">Вы можете забрать товар сами,<br>заехав в наш офис:</p>
-            <a class="contact-map" href="/img/map-popup.png" target="_blank"><img src="/img/map-small.png" width="300" height="158" alt="как к нам доехать" title="Кликните, чтобы увеличить"></a><!--окрываться должна поверх окна, а как это сделать? Это будет скрипт?-->
+            <a class="contact-map" href="/img/map-popup.png" target="_blank"><img src="/img/map-small.png" width="300" height="158" alt="как к нам доехать" title="Кликните, чтобы увеличить"></a>
             <a class="button-all" href="form-contact.html">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a>
         </section>
 
@@ -185,7 +186,7 @@
     <footer class="main-footer">
 
         <div class="menu-info">
-            <a class="logo-company"><img src="img/logo.png" width="220" height="47" alt="Техномарт"></a>
+            <a class="logo-company" href="logo.html" alt="Техномарт"></a>
             <ul class="list-info">
                 <li><a href="company.html">Компания</a></li>
                 <li><a href="news.html">Новости</a></li>
@@ -225,6 +226,25 @@
         </div>
 
     </footer>
+
+    <form class="urer" method="post" action="https://echo.tehnomart.ru">
+        <p class="user-open">
+            <label for="user-login">Логин</label>
+            <input id="user-login" type="text" name="login" placeholder="Логин" required>
+        </p>
+        <p class="user-open">
+            <label for="user-password">Пароль</label>
+            <input id="user-password" type="password" name="password" placeholder="Пароль" required>
+        </p>
+        <p>
+            <label>
+                <input type="checkbox" name="remember">
+                Запомните меня
+            </label>
+        </p>
+        <button type="submit">Войти</button>
+    </form>
+    <button class="modal-close" type="button">Закрыть</button>
 
 </body>
 
