@@ -227,24 +227,29 @@
 
     </footer>
 
-    <form class="urer" method="post" action="https://echo.tehnomart.ru">
-        <p class="user-open">
-            <label for="user-login">Логин</label>
-            <input id="user-login" type="text" name="login" placeholder="Логин" required>
-        </p>
-        <p class="user-open">
-            <label for="user-password">Пароль</label>
-            <input id="user-password" type="password" name="password" placeholder="Пароль" required>
-        </p>
-        <p>
-            <label>
-                <input type="checkbox" name="remember">
-                Запомните меня
-            </label>
-        </p>
-        <button type="submit">Войти</button>
-    </form>
-    <button class="modal-close" type="button">Закрыть</button>
+    <div class="letters">
+        <form method="post" action="https://technomart.ru/letters">
+            <div class="half-width">
+                <label for="name">Ваше имя</label>
+                <input type="text" id="name" placeholder="Имя Фамилия" required>
+            </div>
+            <div class="half-width">
+                <label for="email">Ваш e-mail</label>
+                <input type="email" name="email" placeholder="email@example.com" required>
+            </div>
+            <label for="review">Текст письма</label>
+            <textarea id='review' rows='5'>в свободной форме</textarea>
+            <div class="button-letters">
+                <button type="submit">отправить</button>
+            </div>
+        </form>
+        <button class="modal-close" type="button">Закрыть</button>
+    </div>
+    
+    <div class="modal-map">
+        <img src="img/map-popup.png" width="940" height="446" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+        <button class="modal-close" type="button">Закрыть</button>
+    </div>
 
 </body>
 
