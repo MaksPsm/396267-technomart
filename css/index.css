@@ -1,0 +1,501 @@
+@font-face {
+font-family: "Cuprum";
+src: url("fonts/Cuprum.woff2") format("woff2"), url("fonts/Cuprum.woff") format("woff");
+font-style: normal;
+}
+
+}
+@font-face {
+font-family: "Cuprum";
+src: url("fonts/Cuprum.woff2") format("woff2"), url("fonts/Cuprum.woff") format("woff");
+font-style: bold;
+}
+
+}
+@font-face {
+font-family: "Cuprum";
+src: url("fonts/Cuprum.woff2") format("woff2"), url("fonts/Cuprum.woff") format("woff");
+font-style: italic;
+}
+
+}
+@font-face {
+font-family: "Ptsans";
+src: url("fonts/Ptsans.woff2") format("woff2"), url("fonts/Ptsans.woff") format("woff");
+font-style: normal;
+}
+
+@font-face {
+font-family: "Ptsans";
+src: url("fonts/Ptsans.woff2") format("woff2"), url("fonts/Ptsans.woff") format("woff");
+font-style: bold;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Cuprum", "PT Sans", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #000000;
+    
+    background-color: #ffffff;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header-top {
+    font-size: 17px;
+    line-height: 18px;
+    color: #ffffff;
+    
+    background-color: #293449;
+}
+
+.logo-company {
+    font-size: 24px;
+    background-color: #ee3643;
+}
+.logo-company:hover {
+    background-color: #ba2732;
+}
+
+.logo-company:active {
+    background-color: #ba2732;
+}
+
+.search,.bookmarks,.cart,.order {
+    font-size: 17px;
+    line-height: 18px;
+    color: #ffffff; 
+}
+
+.order {
+    background-color: #63a63e;
+}
+
+a.search:hover,
+a.bookmarks:hover,
+a.cart:hover
+ {
+    background-color: #212a3a;
+}
+
+a.bookmarks:active,
+a.cart:active {
+    background-color: #161d29;
+}
+
+a.order:hover,
+a.order:focus {
+    background-color: #5fbb2d;
+}
+
+a.order:hover,
+a.order:active {
+    background-color: #518534;
+}
+
+.header-center {
+    background-color: #f1f5f7;
+}
+
+h1.caption {
+    font-size: 16px;
+    line-height: 23px;
+    font-style: italic;
+    color: #ee3643;
+}
+
+.number {
+   font-size: 21px;
+    line-height: 21px;
+    color: #e9292a;
+    border: 2px solid #ffffff;
+}
+
+.address-header {
+    font-size: 14px;
+    line-height: 24px;
+    color: #32425c; 
+    
+}
+
+.button-reception {
+    font-size: 21px;
+    line-height: 21px;
+    color: #000000; 
+    
+    background-color: #ffffff;
+}
+
+.button-reception:hover {
+    color: #ee3643;
+}
+
+.button-reception:active {
+    color: #f1f5f7;
+}
+
+.navigation-list {
+    font-size: 17px;
+    line-height: 17px;
+    background-color: #32425c;
+}
+
+.navigation-item a {
+     color: #f1f5f7;
+}
+
+li.navigation-item:nth-child(3):hover {
+    background-color: #293449;
+}
+
+.li.navigation-item:nth-child(3):hover {
+    background-color: #1d2739;
+}
+
+.navigation-list,
+.popular-list,
+.goods-list,
+.factory-list,
+.list-info,
+.list-sales,
+.social-btn li,
+.delivery-far,
+.bread-item,
+.breadcrumbs,
+.sorting-item,
+.filter-factory,
+.filter-radio,
+.list-pages {
+    list-style: none;
+}
+
+.materials {
+    background-color: #f6b22d;
+}
+
+.goods-text {
+    font-size: 24px;
+    line-height: 30px;
+     font-weight: 700;
+    color: #ffffff;
+}
+
+.tools {
+     background-color: #3bbce3;
+}
+
+.technics {
+    background-color: #dc91d8;
+}
+
+.services-discount {
+     background-color: #8ed78f;
+}
+
+.delivery {
+    background-color: #ffc047;
+}
+.button-goods {
+    font-size: 14px;
+    line-height: 18px;
+    color: #ffffff;
+    background-color: #e5e5e5;
+}
+
+.button-goods:hover {
+    background-color: #cccccc;
+}
+
+.button-goods:active {
+    background-color: #b2b2b2;
+}
+
+.hit {
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 700;
+    color: black;/* заменим на белый*/
+}
+
+.hit-man {
+    font-size: 18px;
+    line-height: 24px;
+    color: black;/* заменим на белый*/
+}
+
+    
+.button-details {
+    font-size: 14px;
+    line-height: 18px;
+    color: #ffffff;
+    text-align: center;
+    background-color: #ee3643;
+}
+
+.button-details:hover {
+    background-color: #ca2c37;
+}
+
+.button-details:active {
+    background-color: #ba2732;
+}
+
+.popular-catalog {
+    background-color: #f9f5f0;
+}
+
+.popular-text {
+    font-size: 30px;
+    line-height: 30px;
+    color: #32425c;
+}
+
+.button-all {
+    font-size: 14px;
+    line-height: 18px;
+    color: #ffffff;
+    background-color: #ee3643;
+}
+
+.goods-item {
+    border: 1px solid #f9f5f0;
+}
+
+.name-item {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #000000;
+   
+}
+
+.old-price {
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: 700;
+    color: #a9a9a9;
+    
+}
+
+.button-price {
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #ee3643;
+}
+/* сюда вставить блок который будет отрываться при наведении на .good-item */
+
+.popular-factory-catalog {
+    background-color: #f9f5f0;
+}
+
+.popular-factory-text {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #32425c;
+}
+
+.logo-factory  {
+    border: 1px solid #f9f5f0;
+}
+
+.services {
+    background-color: #f5f8fa;
+}
+
+.services-caption {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;   
+}
+
+.services-delivery,
+.services-guarantee,
+.services-credit {
+    font-size: 21px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #32425c;
+}
+
+.services-delivery.span-text {
+    font-size: 30px;
+    line-height: 30px;
+    color: #32425c;
+}
+
+.services-delivery.main-text {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.company-caption,
+.contact-caption  {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400; 
+}
+
+.delivery-far {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400; 
+}
+
+.menu-info,
+.footer-center {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    background-color: #32425c;
+}
+
+.info-item a,
+.address-heder {
+    color: #f3f7f9;
+}
+
+.sales-item a {
+    color: #ffda96;
+}
+
+.footer-bottom {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #f3f7f9;
+    background-color: #293449;
+}
+
+.bottom-text a {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #ffda96;
+}
+
+.name-inner {
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: 400;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.personal-data {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #32425c;
+    text-decoration: underline;
+}
+
+.personal-data:hover {
+    color: #ee3643;
+}
+
+.personal-data:active,
+.name-inner:active {
+    color:#e5e5e5;
+}
+
+.page-catalog {
+   font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #32425c;
+    background-color: #f2f6f8;
+}
+
+.filter-text,
+.sorting-item  {
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    
+    background-color: #f7f3ec;
+}
+    
+.sorting-item,
+.sorting-item a {
+    color: #e5e5e5;
+    text-decoration: underline dashed #ee3643;
+}
+
+.sorting-item:hover,
+.sorting-item a:hover {
+    color: #000000;
+    text-decoration: underline #ee3643;
+} 
+
+.sorting-item:active,
+.sorting-item a:active {
+    color: #ee3643;
+} 
+
+.caption-filter,
+legend {
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.description-item {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400; 
+}
+
+.description-wrapper {
+    background-color: #f2f6f8;
+}
+
+.half-width label,
+.text-letters {
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.half-width input[email],
+.half-width input[text] {
+     font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #a9a9a9;
+}
+
+.button-modal {
+     font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #ee3643;
+    border: none;
+}
+
+
+
+
+
+
+
+
+

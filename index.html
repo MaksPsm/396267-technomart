@@ -18,7 +18,7 @@
                 <label>Поиск:</label>
                 <input name="search" type="search">
             </form>
-            <a class="bookmark" href="bookmark.html">Закладки:</a>
+            <a class="bookmarks" href="bookmarks.html">Закладки:</a>
             <a class="cart" href="cart.html">Корзина:</a>
             <a class="order" href="order.html">Оформить заказ</a>
         </div>
@@ -65,7 +65,7 @@
             </div>
         </div>
 
-        <div class="services">
+        <div class="services-discount">
             <div class="sale">
                 <p class="goods-text">Скидки 50%</p>
                 <a class="button-goods" href="sale.html">НА 350 ТОВАРОВ</a>
@@ -176,7 +176,7 @@
 
         <section class="contact">
             <h2 class="contact-caption">КОНТАКТЫ</h2>
-            <p class="contact-caption text-anons">Вы можете забрать товар сами,<br>заехав в наш офис:</p>
+            <p class="contact-caption-text">Вы можете забрать товар сами,<br>заехав в наш офис:</p>
             <a class="contact-map" href="img/map-popup.png" target="_blank"><img src="img/map-small.png" width="300" height="158" alt="как к нам доехать" title="Кликните, чтобы увеличить"></a>
             <a class="button-all" href="form-contact.html">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a>
         </section>
@@ -188,21 +188,21 @@
         <div class="menu-info">
             <a class="logo-company">ТЕХНОМАРТ</a>
             <ul class="list-info">
-                <li><a href="company.html">Компания</a></li>
-                <li><a href="news.html">Новости</a></li>
-                <li><a href="catalog.html">Каталог</a></li>
-                <li><a href="delivery.html">Доставка</a></li>
-                <li><a href="contacts.html">Контакты</a></li>
+                <li class="info-item"><a href="company.html">Компания</a></li>
+                <li class="info-item"><a href="news.html">Новости</a></li>
+                <li class="info-item"><a href="catalog.html">Каталог</a></li>
+                <li class="info-item"><a href="delivery.html">Доставка</a></li>
+                <li class="info-item" ><a href="contacts.html">Контакты</a></li>
             </ul>
         </div>
 
         <div class="footer-center">
             <p class="address-heder">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>+7(812)555-05-55</p>
             <ul class="list-sales">
-                <li><a href="materials.html">Материалы</a></li>
-                <li><a href="technics.html">Техника</a></li>
-                <li><a href="tools.html">Инструменты</a></li>
-                <li><a href="special.html">Спецпредложения</a></li>
+                <li class="sales-item"><a href="materials.html">Материалы</a></li>
+                <li class="sales-item"><a href="technics.html">Техника</a></li>
+                <li class="sales-item"><a href="tools.html">Инструменты</a></li>
+                <li class="sales-item"><a href="special.html">Спецпредложения</a></li>
             </ul>
         </div>
 
@@ -237,10 +237,12 @@
                 <label for="email">Ваш e-mail</label>
                 <input type="email" name="email" id="email" placeholder="email@example.com" required>
             </div>
+            <div class="text-letters">
             <label for="review">Текст письма</label>
             <textarea id='review' rows='5'>в свободной форме</textarea>
+           </div>
             <div class="button-letters">
-                <button type="submit">отправить</button>
+                <button class="button-modal" type="submit">отправить</button>
             </div>
         </form>
         <button class="modal-close" type="button">Закрыть</button>

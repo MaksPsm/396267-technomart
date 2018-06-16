@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>Перфораторы в магазине Техномарт</title>
     <meta name="description" content="Большой выбор перфораторов по низким ценам">
-    <link rel="stylesheet" href="css/inner.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
@@ -31,8 +31,8 @@
             </div>
             <p class="address-header">г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8</p>
             <a class="name-inner" href="name.html">Равшан Джамшутович</a>
-            <a class="personal-data" href="order.html"><u>Мои заказы</u></a>
-            <a class="personal-data" href="personal_area.html"><u>Мои заказы</u></a>
+            <a class="personal-data" href="order.html">Мои заказы</a>
+            <a class="personal-data" href="personal_area.html">Личный Кабинет</a>
         </div>
 
         <nav class="navigation">
@@ -54,7 +54,7 @@
         <ul class="breadcrumbs">
             <li><a class="bread-item" href="catalog.html">КАТАЛОГ</a></li>
             <li><a class="bread-item" href="tools.html">ИНСТРУМЕНТЫ</a></li>
-            <li class="bread-crumbs-current">ПЕРФОРАТОРЫ</li>
+            <li class="breadcrumbs-current">ПЕРФОРАТОРЫ</li>
         </ul>
 
         <h1 class="page-catalog">ПЕРФОРАТОРЫ</h1>
@@ -74,8 +74,8 @@
                     <span class="max">30000</span>
                 </fieldset>
                 <fieldset tabindex="1">
-                    <legend>производители:</legend>
-                    <ul>
+                    <legend>ПРОИЗВОДИТЕЛИ:</legend>
+                    <ul class="filter-factory">
                         <li>
                             <input type="checkbox" name="boch" id="filter-boch" checked>
                             <label for="filter-boch">BOCH</label>
@@ -99,8 +99,8 @@
                     </ul>
                 </fieldset>
                 <fieldset>
-                    <legend>питание:</legend>
-                    <ul>
+                    <legend>ПИТАНИЕ:</legend>
+                    <ul class="filter-radio">
                         <li>
                             <input type="radio" name="power" value="battery" id="filter-battery" checked>
                             <label for="filter-battery">аккумуляторные</label>
@@ -119,9 +119,9 @@
         <div class="sorting">
             <span class="filter-text">СОРТИРОВКА:</span>
             <ul class="sorting-item">
-                <li>по цене</li>
-                <li><a href="form-type-tools.html">по типу</a></li>
-                <li><a href="form-function-tools.html">по функционалу</a></li>
+                <li>ПО ЦЕНЕ</li>
+                <li><a href="form-type-tools.html">ПО ТИПУ</a></li>
+                <li><a href="form-function-tools.html">ПО ФУНКЦИОНАЛУ</a></li>
             </ul>
             <span class="button filter-button-top">вверх</span>
             <span class="button filter-button-down">вниз</span>
@@ -193,10 +193,10 @@
             <li><a href="page3">3</a></li>
             <li><a href="next">следующая</a></li>
         </ul>
-
-        <h2 class="description-item">ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
-        <p>Перфоратор - универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче. бетоне и камне. Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментом ряду есть выбор "трехрежимников": в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
-
+        <div class="description-wrapper">
+            <h2 class="description-item">ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
+            <p>Перфоратор - универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче. бетоне и камне. Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментом ряду есть выбор "трехрежимников": в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+        </div>
     </main>
 
     <footer class="main-footer">
@@ -204,21 +204,21 @@
         <div class="menu-info">
             <a class="logo-company" href="index.html">ТЕХНОМАРТ</a>
             <ul class="list-info">
-                <li><a href="company.html">Компания</a></li>
-                <li><a href="news.html">Новости</a></li>
-                <li><a href="catalog.html">Каталог</a></li>
-                <li><a href="delivery.html">Доставка</a></li>
-                <li><a href="contacts.html">Контакты</a></li>
+                <li class="info-item"><a href="company.html">Компания</a></li>
+                <li class="info-item"><a href="news.html">Новости</a></li>
+                <li class="info-item"><a href="catalog.html">Каталог</a></li>
+                <li class="info-item"><a href="delivery.html">Доставка</a></li>
+                <li class="info-item"><a href="contacts.html">Контакты</a></li>
             </ul>
         </div>
 
         <div class="footer-center">
             <p class="address-heder">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>+7(812)555-05-55</p>
             <ul class="list-sales">
-                <li><a href="materials.html">Материалы</a></li>
-                <li><a href="technics.html">Техника</a></li>
-                <li><a href="tools.html">Инструменты</a></li>
-                <li><a href="special.html">Спецпредложения</a></li>
+                <li class="sales-item"><a href="materials.html">Материалы</a></li>
+                <li class="sales-item"><a href="technics.html">Техника</a></li>
+                <li class="sales-item"><a href="tools.html">Инструменты</a></li>
+                <li class="sales-item"><a href="special.html">Спецпредложения</a></li>
             </ul>
         </div>
 
