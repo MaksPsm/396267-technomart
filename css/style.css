@@ -1,34 +1,32 @@
 @font-face {
-font-family: "Cuprum";
-src: url("fonts/Cuprum.woff2") format("woff2"), url("fonts/Cuprum.woff") format("woff");
-font-style: normal;
+    font-family: "Cuprum";
+    src: url("../fonts/Cuprum.woff2") format("woff2"), url("../fonts/Cuprum.woff") format("woff");
+    font-weight: normal;   
 }
 
-}
 @font-face {
-font-family: "Cuprum";
-src: url("fonts/Cuprum.woff2") format("woff2"), url("fonts/Cuprum.woff") format("woff");
-font-style: bold;
+    font-family: "Cuprum";
+    src: url("../fonts/Cuprumbold.woff2") format("woff2"), url("../fonts/Cuprumbold.woff") format("woff");
+    font-weight: bold;
 }
 
-}
-@font-face {
-font-family: "Cuprum";
-src: url("fonts/Cuprum.woff2") format("woff2"), url("fonts/Cuprum.woff") format("woff");
+@font-face { 
+font-family: "Cuprum"; 
+src: url("../fonts/cuprumitalic.woff") format("woff2"), url("../fonts/Cuprumitalic.woff") format("woff"); 
+font-weight: normal; 
 font-style: italic;
 }
 
-}
 @font-face {
-font-family: "Ptsans";
-src: url("fonts/Ptsans.woff2") format("woff2"), url("fonts/Ptsans.woff") format("woff");
-font-style: normal;
+    font-family: "Ptsans";
+    src: url("../fonts/Ptsans.woff2") format("woff2"), url("../fonts/Ptsans.woff") format("woff");
+    font-weight: normal;
 }
 
 @font-face {
-font-family: "Ptsans";
-src: url("fonts/Ptsans.woff2") format("woff2"), url("fonts/Ptsans.woff") format("woff");
-font-style: bold;
+    font-family: "Ptsans";
+    src: url("../fonts/Ptsansbold.woff2") format("woff2"), url("../fonts/Ptsansbold.woff") format("woff");
+    font-weight: bold;
 }
 
 body {
@@ -40,55 +38,105 @@ body {
     line-height: 24px;
     font-weight: 400;
     color: #000000;
-    
+
     background-color: #ffffff;
-    background-position: top center;
-    background-repeat: no-repeat;
 }
 
 a {
     text-decoration: none;
 }
 
+.main-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-wrapper {
+    width: 100%;
+    min-height: 320px;
+    margin-bottom: 60px;
+    background-color: #f3f7f8;
+}
+
+.header-container {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
 .header-top {
     font-size: 17px;
     line-height: 18px;
     color: #ffffff;
-    
+    display: flex;
+    width: 940px;
+    min-height: 42px;
+
+
     background-color: #293449;
 }
 
 .logo-company {
     font-size: 24px;
     background-color: #ee3643;
+    display: flex;
+    justify-content: center;
+    padding-top: 12px;
+
+    width: 220px;
+
 }
+
 .logo-company:hover {
-    background-color: #ba2732;
+    background-color: #ca2c37;
 }
 
 .logo-company:active {
     background-color: #ba2732;
 }
 
-.search,.bookmarks,.cart,.order {
+.search,
+.bookmarks,
+.cart,
+.order {
     font-size: 17px;
     line-height: 18px;
-    color: #ffffff; 
+    color: #ffffff;
+}
+
+.header-top form {
+    width: 270px;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 14px;
+
+}
+
+.bookmarks,
+.cart {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    padding-top: 14px;
 }
 
 .order {
     background-color: #63a63e;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    padding-top: 14px;
 }
 
-a.search:hover,
-a.bookmarks:hover,
-a.cart:hover
- {
+.search:hover,
+.bookmarks:hover,
+.cart:hover {
     background-color: #212a3a;
 }
 
-a.bookmarks:active,
-a.cart:active {
+.bookmarks:active,
+.cart:active {
     background-color: #161d29;
 }
 
@@ -104,36 +152,96 @@ a.order:active {
 
 .header-center {
     background-color: #f1f5f7;
+    display: flex;
+    width: 940px;
+    min-height: 160px;
+
+
 }
 
-h1.caption {
+.caption {
     font-size: 16px;
     line-height: 23px;
+    font-weight: 400;
     font-style: italic;
     color: #ee3643;
+    width: 200px;
+    margin-left: 52px;
+    margin-top: 54px;
+    margin-right: 70px;
+    margin-bottom: 44px;
+    text-align: left;
+}
+
+.address-wrapper {
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+}
+
+.phone {
+    width: 266px;
+    height: 45px;
+    border: 2px solid #ffffff;
+    display: flex;
+    align-items: center;
+    margin-top: 44px;
+
+}
+
+.tube {
+    margin-left: 14px;
+
 }
 
 .number {
-   font-size: 21px;
+    font-size: 21px;
     line-height: 21px;
     color: #e9292a;
-    border: 2px solid #ffffff;
+    display: flex;
+    margin-right: 48px;
+    margin-left: 35px;
 }
 
 .address-header {
     font-size: 14px;
     line-height: 24px;
-    color: #32425c; 
-    
+    color: #32425c;
+    display: flex;
+    justify-content: center;
+    margin-top: 7px;
 }
 
 .button-reception {
     font-size: 21px;
     line-height: 21px;
-    color: #000000; 
-    
+    color: #000000;
+
     background-color: #ffffff;
 }
+
+.entrance {
+    width: 121px;
+
+    margin-top: 45px;
+    margin-left: 71px;
+    margin-bottom: 68px;
+    display: flex;
+    justify-content: center;
+    padding-top: 13px;
+}
+
+.check {
+    width: 150px;
+
+    margin-top: 45px;
+    margin-left: 5px;
+    margin-bottom: 68px;
+    display: flex;
+    justify-content: center;
+    padding-top: 13px;
+}
+
 
 .button-reception:hover {
     color: #ee3643;
@@ -144,20 +252,26 @@ h1.caption {
 }
 
 .navigation-list {
-    font-size: 17px;
-    line-height: 17px;
     background-color: #32425c;
+    display: flex;
+    width: 940;
+    min-height: 60px;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 60px;
 }
 
 .navigation-item a {
-     color: #f1f5f7;
+    color: #f1f5f7;
+    font-size: 17px;
+    line-height: 17px;
 }
 
-li.navigation-item:nth-child(3):hover {
+.navigation-item:nth-child(2):hover {
     background-color: #293449;
 }
 
-.li.navigation-item:nth-child(3):hover {
+.navigation-item:nth-child(2):active {
     background-color: #1d2739;
 }
 
@@ -176,63 +290,137 @@ li.navigation-item:nth-child(3):hover {
 .filter-radio,
 .list-pages {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.goods {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 21px;
+    
+}
+
 
 .materials {
     background-color: #f6b22d;
+    width: 300px;
+    min-height: 123px;
 }
 
 .goods-text {
     font-size: 24px;
     line-height: 30px;
-     font-weight: 700;
+    font-weight: 700;
     color: #ffffff;
+
+    display: flex;
+    flex-direction: column;
+    margin-top: 23px;
+    margin-left: 23px;
 }
 
 .tools {
-     background-color: #3bbce3;
+    background-color: #3bbce3;
+    width: 300px;
+    min-height: 123px;
 }
 
 .technics {
     background-color: #dc91d8;
+    width: 300px;
+    min-height: 123px;
 }
-
-.services-discount {
-     background-color: #8ed78f;
-}
-
-.delivery {
-    background-color: #ffc047;
-}
+    
 .button-goods {
     font-size: 14px;
     line-height: 18px;
     color: #ffffff;
-    background-color: #e5e5e5;
+    background-color: rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    width: 135px;
+    min-height: 28px;
+    margin-top: 26px;
+    margin-bottom: 23px;
+    margin-left: 23px;
+
+}
+
+.entry {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .button-goods:hover {
-    background-color: #cccccc;
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .button-goods:active {
-    background-color: #b2b2b2;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.hit-man-wrapper {
+    display: flex;
+    width: 940px;
+    min-height: 266px;
+}
+
+ .services-discount {
+    background-color: #8ed78f;
+    
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+}
+
+.sale {
+    width: 300px;
+    height: 123px
+    margin-bottom: 20px;
+    
+    
+}
+
+.delivery {
+    background-color: #ffc047;
+    width: 300px;
+    height: 123px;
+    margin-top: auto
+    
+}
+
+.catalog-in {
+    width: 620px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 20px;
 }
 
 .hit {
     font-size: 36px;
     line-height: 36px;
     font-weight: 700;
-    color: black;/* заменим на белый*/
+    color: black;
+    /* заменим на белый*/
 }
 
 .hit-man {
     font-size: 18px;
     line-height: 24px;
-    color: black;/* заменим на белый*/
+    color: black;
+    /* заменим на белый*/
 }
 
-    
+
 .button-details {
     font-size: 14px;
     line-height: 18px;
@@ -263,7 +451,14 @@ li.navigation-item:nth-child(3):hover {
     font-size: 14px;
     line-height: 18px;
     color: #ffffff;
-    background-color: #ee3643;
+    background-color: #ee3643;    
+}
+.button-all:hover {
+    background-color: #ca2c37;
+}
+
+.button-all:activ {
+    background-color: #ba2732;
 }
 
 .goods-item {
@@ -275,15 +470,15 @@ li.navigation-item:nth-child(3):hover {
     line-height: 20px;
     font-weight: 700;
     color: #000000;
-   
+
 }
 
 .old-price {
     font-size: 17px;
     line-height: 18px;
     font-weight: 700;
-    color: #a9a9a9;
-    
+    colo r: #a9a9a9;
+
 }
 
 .button-price {
@@ -293,6 +488,7 @@ li.navigation-item:nth-child(3):hover {
     color: #ffffff;
     background-color: #ee3643;
 }
+
 /* сюда вставить блок который будет отрываться при наведении на .good-item */
 
 .popular-factory-catalog {
@@ -306,7 +502,7 @@ li.navigation-item:nth-child(3):hover {
     color: #32425c;
 }
 
-.logo-factory  {
+.logo-factory {
     border: 1px solid #f9f5f0;
 }
 
@@ -317,7 +513,7 @@ li.navigation-item:nth-child(3):hover {
 .services-caption {
     font-size: 30px;
     line-height: 30px;
-    font-weight: 400;   
+    font-weight: 400;
 }
 
 .services-delivery,
@@ -329,13 +525,13 @@ li.navigation-item:nth-child(3):hover {
     color: #32425c;
 }
 
-.services-delivery.span-text {
+.span-text {
     font-size: 30px;
     line-height: 30px;
     color: #32425c;
 }
 
-.services-delivery.main-text {
+.main-text {
     font-size: 14px;
     line-height: 24px;
     font-weight: 400;
@@ -343,16 +539,16 @@ li.navigation-item:nth-child(3):hover {
 }
 
 .company-caption,
-.contact-caption  {
+.contact-caption {
     font-size: 30px;
     line-height: 30px;
-    font-weight: 400; 
+    font-weight: 400;
 }
 
 .delivery-far {
     font-size: 18px;
     line-height: 24px;
-    font-weight: 400; 
+    font-weight: 400;
 }
 
 .menu-info,
@@ -368,7 +564,7 @@ li.navigation-item:nth-child(3):hover {
     color: #f3f7f9;
 }
 
-.sales-item a {
+.sales-item a  {
     color: #ffda96;
 }
 
@@ -376,7 +572,7 @@ li.navigation-item:nth-child(3):hover {
     font-size: 16px;
     line-height: 18px;
     font-weight: 400;
-    color: #f3f7f9;
+    color: #ffffff;
     background-color: #293449;
 }
 
@@ -385,6 +581,14 @@ li.navigation-item:nth-child(3):hover {
     line-height: 18px;
     font-weight: 400;
     color: #ffda96;
+}
+
+.bottom-text a:hover {
+    color: #ffd180;
+}
+
+.bottom-text a:active {
+    color: #ee3643;
 }
 
 .name-inner {
@@ -409,11 +613,11 @@ li.navigation-item:nth-child(3):hover {
 
 .personal-data:active,
 .name-inner:active {
-    color:#e5e5e5;
+    color: #e5e5e5;
 }
 
 .page-catalog {
-   font-size: 30px;
+    font-size: 30px;
     line-height: 30px;
     font-weight: 400;
     color: #32425c;
@@ -421,14 +625,14 @@ li.navigation-item:nth-child(3):hover {
 }
 
 .filter-text,
-.sorting-item  {
+.sorting-item {
     font-size: 13px;
     line-height: 18px;
     font-weight: 400;
-    
+
     background-color: #f7f3ec;
 }
-    
+
 .sorting-item,
 .sorting-item a {
     color: #e5e5e5;
@@ -439,12 +643,12 @@ li.navigation-item:nth-child(3):hover {
 .sorting-item a:hover {
     color: #000000;
     text-decoration: underline #ee3643;
-} 
+}
 
 .sorting-item:active,
 .sorting-item a:active {
     color: #ee3643;
-} 
+}
 
 .caption-filter,
 legend {
@@ -457,7 +661,7 @@ legend {
 .description-item {
     font-size: 30px;
     line-height: 30px;
-    font-weight: 400; 
+    font-weight: 400;
 }
 
 .description-wrapper {
@@ -472,16 +676,16 @@ legend {
     color: #000000;
 }
 
-.half-width input[email],
-.half-width input[text] {
-     font-size: 13px;
+.half-width input[type="email"],
+.half-width input[type="text"]  {
+    font-size: 13px;
     line-height: 18px;
     font-weight: 400;
     color: #a9a9a9;
 }
 
 .button-modal {
-     font-size: 14px;
+    font-size: 14px;
     line-height: 18px;
     font-weight: 400;
     color: #ffffff;
@@ -490,12 +694,3 @@ legend {
     background-color: #ee3643;
     border: none;
 }
-
-
-
-
-
-
-
-
-
