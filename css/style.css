@@ -1,7 +1,7 @@
 @font-face {
     font-family: "Cuprum";
     src: url("../fonts/Cuprum.woff2") format("woff2"), url("../fonts/Cuprum.woff") format("woff");
-    font-weight: normal;   
+    font-weight: normal;
 }
 
 @font-face {
@@ -10,11 +10,11 @@
     font-weight: bold;
 }
 
-@font-face { 
-font-family: "Cuprum"; 
-src: url("../fonts/cuprumitalic.woff") format("woff2"), url("../fonts/Cuprumitalic.woff") format("woff"); 
-font-weight: normal; 
-font-style: italic;
+@font-face {
+    font-family: "Cuprum";
+    src: url("../fonts/cuprumitalic.woff") format("woff2"), url("../fonts/Cuprumitalic.woff") format("woff");
+    font-weight: normal;
+    font-style: italic;
 }
 
 @font-face {
@@ -81,8 +81,8 @@ a {
     background-color: #ee3643;
     display: flex;
     justify-content: center;
-    padding-top: 12px;
-
+    align-items: center;
+    color: #ffffff;
     width: 220px;
 
 }
@@ -254,7 +254,7 @@ a.order:active {
 .navigation-list {
     background-color: #32425c;
     display: flex;
-    width: 940;
+    width: 940px;
     min-height: 60px;
     justify-content: space-around;
     align-items: center;
@@ -304,7 +304,7 @@ a.order:active {
     display: flex;
     justify-content: space-between;
     margin-bottom: 21px;
-    
+
 }
 
 
@@ -337,7 +337,7 @@ a.order:active {
     width: 300px;
     min-height: 123px;
 }
-    
+
 .button-goods {
     font-size: 14px;
     line-height: 18px;
@@ -373,20 +373,20 @@ a.order:active {
     min-height: 266px;
 }
 
- .services-discount {
+.services-discount {
     background-color: #8ed78f;
-    
-     display: flex;
-     flex-direction: column;
-     justify-content: space-between;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .sale {
     width: 300px;
-    height: 123px
+    height: 123px; 
     margin-bottom: 20px;
-    
-    
+
+
 }
 
 .delivery {
@@ -394,7 +394,6 @@ a.order:active {
     width: 300px;
     height: 123px;
     margin-top: auto
-    
 }
 
 .catalog-in {
@@ -451,13 +450,14 @@ a.order:active {
     font-size: 14px;
     line-height: 18px;
     color: #ffffff;
-    background-color: #ee3643;    
+    background-color: #ee3643;
 }
+
 .button-all:hover {
     background-color: #ca2c37;
 }
 
-.button-all:activ {
+.button-all:active {
     background-color: #ba2732;
 }
 
@@ -477,7 +477,7 @@ a.order:active {
     font-size: 17px;
     line-height: 18px;
     font-weight: 700;
-    colo r: #a9a9a9;
+    color: #a9a9a9;
 
 }
 
@@ -551,12 +551,41 @@ a.order:active {
     font-weight: 400;
 }
 
+.main-footer {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
 .menu-info,
 .footer-center {
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;
     background-color: #32425c;
+
+    margin: 0;
+    padding: 0;
+}
+
+.menu-info {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.list-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 170px;
+    width: 550px;
+}
+
+.info-item {
+    padding-top: 38px;
+    padding-bottom: 5px;
+    padding-left: 20px;
 }
 
 .info-item a,
@@ -564,8 +593,45 @@ a.order:active {
     color: #f3f7f9;
 }
 
-.sales-item a  {
+.info-item:hover,
+.sales-item:hover  {
+    text-decoration: underline;
+} 
+
+.info-item a:active {
+    color: #a4abb4;
+}
+
+.sales-item a:active  {
+    color: #ad956f;
+}
+
+.sales-item a {
     color: #ffda96;
+}
+
+.footer-center {
+    display: flex;
+    flex-wrap: wrap;   
+}
+
+.list-sales {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 510px;
+    margin-left: 105px;  
+}
+
+.address-footer {
+    font-size: 18px;
+    line-height: 24px;
+    color: #ffffff;
+}
+
+.sales-item {
+    margin-top: 18px;
+    margin-bottom: 72px;   
 }
 
 .footer-bottom {
@@ -574,6 +640,10 @@ a.order:active {
     font-weight: 400;
     color: #ffffff;
     background-color: #293449;
+    
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
 }
 
 .bottom-text a {
@@ -589,6 +659,18 @@ a.order:active {
 
 .bottom-text a:active {
     color: #ee3643;
+}
+
+.feedback {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.made-in {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .name-inner {
@@ -677,7 +759,7 @@ legend {
 }
 
 .half-width input[type="email"],
-.half-width input[type="text"]  {
+.half-width input[type="text"] {
     font-size: 13px;
     line-height: 18px;
     font-weight: 400;
