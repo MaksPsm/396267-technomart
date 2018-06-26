@@ -753,13 +753,8 @@ a.order:active {
 }
 
 .wrapper-details {
-    width: 940px;
-    margin: 0 auto;
-    padding: 0 10px;
-    
-    display: flex;
-    justify-content: space-between;
-    
+   
+
     margin-bottom: 65px;
     margin-top: 65px;
 }
@@ -769,7 +764,8 @@ a.order:active {
     flex-direction: column;
     justify-content: space-between;
     
-    margin-right: 120px;  
+ margin-right: 120px; 
+    
 }
 
 .company-caption,
@@ -1396,11 +1392,6 @@ legend {
     display: flex;
     flex-direction: column;
     
-    width: 940px;
-    
-    margin: 0 auto;
-    padding: 0 10px;
-    
     margin-top: 60px;
         
 }
@@ -1600,17 +1591,6 @@ input[type="radio"].visually-hidden {
     border-left-color:#ee3643;
 }
 
-.company-transport {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.little-description {
-    display: flex;
-    flex-direction: column;
-    
-}
 
 
 
