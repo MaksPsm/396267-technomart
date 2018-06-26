@@ -1114,7 +1114,7 @@ a.order:active {
     display: flex;
     
     
-    margin-top: 15px;
+    margin-top: 8px;
     margin-bottom: 0;
     
 }
@@ -1205,6 +1205,7 @@ a.order:active {
     color: #32425c;
     background-color: #f2f6f8;
     
+    width: 100%;
     margin: 0;
     padding: 0;
     
@@ -1600,12 +1601,6 @@ input[type="radio"].visually-hidden {
     height:0;
     border:20px solid white;
     border-left-color:#ee3643;
-}
-
-/*.main.contanier {
-     width: 940;
-    margin: 0 auto;
-    padding: 0 10px; */
 }
 
 
