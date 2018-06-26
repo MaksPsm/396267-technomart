@@ -789,16 +789,13 @@ a.order:active {
 .company-anons {
     padding: 0;
     margin: 0;
-    margin-bottom: 15px;
+    
 }
 
 .delivery-far {
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;
-    
-    margin: 0;
-    padding: 0;
     
     position: relative;
 }
@@ -807,7 +804,7 @@ a.order:active {
     margin: 0;
     padding: 0;
     margin-left: 30px;
-    margin-bottom: 30px;
+    
 }
 
 .delivery-far li {
@@ -1356,8 +1353,8 @@ legend {
     padding: 0;
     margin: 0;
     
-    padding-top: 65px;
-    margin-bottom: 30px;
+   /* padding-top: 65px;
+    margin-bottom: 30px;*/
     
     
 }
@@ -1411,7 +1408,7 @@ legend {
 .description-text {
     padding: 0;
     margin: 0;
-    margin-bottom: 65px;
+  /*  margin-bottom: 65px; */
 }
 
 .half-width label,
@@ -1603,7 +1600,17 @@ input[type="radio"].visually-hidden {
     border-left-color:#ee3643;
 }
 
+.company-transport {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
+.little-description {
+    display: flex;
+    flex-direction: column;
+    
+}
 
 
 
