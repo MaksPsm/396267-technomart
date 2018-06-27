@@ -328,6 +328,10 @@ a.order:active {
     color: #f1f5f7;
 }
 
+.navigation {
+    margin-top: 25px;
+}
+
 .navigation-list {
     background-color: #32425c;
     display: flex;
@@ -591,20 +595,20 @@ a.order:active {
     
     justify-content: space-between;
     
-    margin-top: 25px;
+    margin-top: 10px;
     
 }
 
 .goods-item {
-     position:relative;
-  /*  display:inline-block; */
-    width:218px;
-   /* margin-right:20px;
-    margin-bottom:20px; */
+     position: relative;
+  
+    width: 218px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     border:1px solid #ccc;
-    line-height:20px;
-    font-weight:bold;
-    text-align:center;
+    line-height: 20px;
+    font-weight: bold;
+    text-align: center;
 }
 
 .title {
@@ -635,7 +639,7 @@ a.order:active {
 
 .popular-factory {
     width: auto;
-    margin-top: 25px;
+    margin-top: 10px;
 }
 .popular-factory-catalog {
     width: 940px;
@@ -764,7 +768,7 @@ a.order:active {
     flex-direction: column;
     justify-content: space-between;
     
- margin-right: 120px; 
+ margin-right: 110px; 
     
 }
 
@@ -779,6 +783,10 @@ a.order:active {
 }
 
 .company-caption {
+    
+    margin: 0;
+    padding: 0;
+    
     margin-bottom: 25px;
 }
 
@@ -793,18 +801,41 @@ a.order:active {
     line-height: 24px;
     font-weight: 400;
     
-    position: relative;
+
 }
 
 .delivery-far {
     margin: 0;
     padding: 0;
-    margin-left: 30px;
+    
+   
+    margin-bottom: 25px;
+    margin-top: 25px;
     
 }
 
 .delivery-far li {
     margin-top: 10px;
+}
+
+.company-ony {
+    position: relative;
+    padding-left: 25px;
+}
+
+.business-line::before {
+    position: absolute;
+    
+   /* top: 6px;
+    left: 20px; */
+    
+   /* width: 5px; */
+    height: 2px;
+    
+}
+
+.business-line::before {
+    margin-left: 10px;
 }
 
 .contact {
@@ -1105,9 +1136,10 @@ a.order:active {
 
 .personal-wrapper {
     display: flex;
+   
     
     
-    margin-top: 8px;
+    margin-top: 12px;
     margin-bottom: 0;
     
 }
@@ -1310,7 +1342,9 @@ legend {
     display: flex;
     align-items: center;
     
-    padding-left: 10px;
+   
+    margin-left: auto;
+    margin-right: 15px;
     
     opacity: 0.4;
 }
@@ -1320,7 +1354,6 @@ legend {
     align-items: center;
     
     padding-right: 15px;
-    padding-left: 22px;
     
     opacity: 0.4;
 }
@@ -1339,6 +1372,8 @@ legend {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    
+    margin-top: 10px;
 }
 
 .description-item {
@@ -1360,6 +1395,7 @@ legend {
     align-items: center;
     
     margin-top: 55px;
+    margin-bottom: 60px;
 }
 
 .list-pages li {
@@ -1374,6 +1410,7 @@ legend {
     padding: 10px 20px;
 }
 
+
 .list-pages li:hover {
     border: 1px solid #cccccc;
     
@@ -1381,6 +1418,7 @@ legend {
 
 .list-pages li:active {
     border: 1px solid #ee3643;
+    background-color:  #ee3643;
 }
 
 .description-wrapper {
@@ -1393,13 +1431,14 @@ legend {
     flex-direction: column;
     
     margin-top: 60px;
+    margin-bottom: 70px;
         
 }
 
 .description-text {
     padding: 0;
     margin: 0;
-  /*  margin-bottom: 65px; */
+  margin-top: 30px;
 }
 
 .half-width label,
@@ -1570,25 +1609,25 @@ input[type="radio"].visually-hidden {
 }
 
 .goods-item .button-price{
-    position:relative;
-    width:80px;
-    margin:10px auto;
-    margin-bottom:20px;
-    padding:10px 30px;
-    color:white;
-    background:#ee3643;
-    border-radius:3px;
+    position: relative;
+    width: 80px;
+    margin: 10px auto;
+    margin-bottom: 20px;
+    padding: 10px 30px;
+    color: white;
+    background: #ee3643;
+    border-radius: 3px;
 }
 
 .goods-item .button-price:after{
     content: "";
-    position:absolute;
-    top:0;
-    right:-20px;
-    width:0;
-    height:0;
-    border:20px solid white;
-    border-left-color:#ee3643;
+    position: absolute;
+    top: 0;
+    right: -20px;
+    width: 0;
+    height: 0;
+    border: 19px solid white;
+    border-left-color: #ee3643;
 }
 
 
