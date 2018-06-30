@@ -391,6 +391,12 @@ a.order:active {
     min-height: 123px;
     
     margin-right: 20px;
+    
+     background-image: url(../img/icon-1.svg);
+    background-repeat: no-repeat;
+    background-position: 200px 38px;
+        
+    
 }
 
 .goods-text {
@@ -411,12 +417,22 @@ a.order:active {
     min-height: 123px;
     
     margin-right: 20px;
+    
+     background-image: url(../img/icon-2.svg);
+    background-repeat: no-repeat;
+    background-position: 188px 41px;
+        
 }
 
 .technics {
     background-color: #dc91d8;
     width: 300px;
     min-height: 123px;
+    
+     background-image: url(../img/icon-3.svg);
+    background-repeat: no-repeat;
+    background-position: 188px 40px;
+        
 }
 
 .button-goods {
@@ -461,6 +477,13 @@ a.order:active {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
+     background-image: url(../img/icon-4.svg);
+    background-repeat: no-repeat;
+    background-position: 188px 34px;
+        
+    
+    
 }
 
 .sale {
@@ -469,22 +492,32 @@ a.order:active {
     margin-bottom: 20px;
     
     background-color: #8ed78f;
+    
+     background-image: url(../img/icon-4.svg);
+    background-repeat: no-repeat;
+    background-position: 190px 31px;
+        
 }
 
 .delivery {
     background-color: #ffc047;
     width: 300px;
     height: 123px;
-    margin-top: auto
+    margin-top: auto;
+    
+    background-image: url(../img/icon-5.svg);
+    background-repeat: no-repeat;
+    background-position: 188px 34px;
+        
 }
 
-.catalog-in {
+/*.catalog-in {
     width: 620px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin-right: 20px;
-}
+}*/
 
 .hit {
     font-size: 36px;
@@ -599,7 +632,7 @@ a.order:active {
     
 }
 
-.goods-item {
+ .goods-item {
      position: relative;
   
     width: 218px;
@@ -609,6 +642,10 @@ a.order:active {
     line-height: 20px;
     font-weight: bold;
     text-align: center;
+}
+
+.goods-item:hover {
+    box-shadow: 0 5px 25px 0 #bfc2c9;
 }
 
 .title {
@@ -698,6 +735,10 @@ a.order:active {
     justify-content: center;
     align-items: center;
     
+}
+
+.logo-factory:hover {
+    box-shadow: 0 5px 25px 0 #bfc2c9;
 }
 
 .services {
@@ -829,7 +870,7 @@ a.order:active {
    /* top: 6px;
     left: 20px; */
     
-   /* width: 5px; */
+    width: 5px; 
     height: 2px;
     
 }
@@ -1384,9 +1425,7 @@ legend {
     padding: 0;
     margin: 0;
     
-   /* padding-top: 65px;
-    margin-bottom: 30px;*/
-    
+   
     
 }
 
@@ -1468,7 +1507,7 @@ legend {
     border: none;
 }
 
-.visually-hidden:not(:focus):not(:active),
+/*.visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
   position: absolute;
@@ -1485,15 +1524,9 @@ input[type="radio"].visually-hidden {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+*/
 
-/*.delivery-far {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 240px;  */
-    
-    
-}
+
 
 .delivery-far li {
     padding-left: 55px;
@@ -1570,6 +1603,7 @@ input[type="radio"].visually-hidden {
     border-radius:3px;
 }
 
+
 .goods-item .actions .bookmark{
     color:#32425c;
     background:white;
@@ -1579,13 +1613,15 @@ input[type="radio"].visually-hidden {
 .goods-item .actions{
     display:none;
 }
+
 .goods-item:hover .actions{
     display:block;
 }
 
-.goods-item .actions{
-    display:none;
+.buy:hover {
+    background-color:#ba2732; 
 }
+
 .goods-item .image{
     width:218px;
     height:168px;
@@ -1619,7 +1655,7 @@ input[type="radio"].visually-hidden {
     border-radius: 3px;
 }
 
-.goods-item .button-price:after{
+.goods-item .button-price::after{
     content: "";
     position: absolute;
     top: 0;
@@ -1631,7 +1667,164 @@ input[type="radio"].visually-hidden {
 }
 
 
+ /* слайдер перфоратор */
 
+.slider-hit {
+    position: relative;
+
+    width: 620px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+
+.slider-list {
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.slide-title {
+    margin: 0;
+    padding: 0;
+    
+    margin-left: 20px;
+    margin-top: 15px; 
+
+   font-size: 36px;
+    line-height: 36px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.slide-text {
+    font-size: 18px;
+    line-height: 24px;
+    color: #fff;
+    
+    margin: 0;
+    padding: 0;
+    
+    margin-left: 20px;
+    margin-top: 10px
+}
+
+.button.slide-button {
+    
+    
+     font-size: 14px;
+    line-height: 18px;
+    color: #ffffff;
+    
+    width: 120px;
+    text-align: center;
+    
+    background-color: #ee3643;
+    border-radius: 3px;
+   
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    
+    margin-left: 20px;
+    margin-top: 110px;
+
+    cursor: pointer;
+}
+
+a.button  {
+    text-decoration: none;
+}
+
+.button.slide-button:hover {
+    background-color: #ca2c37;
+}
+.button.slide-button:active {
+    background-color: #ba2732;
+
+}
+
+
+.slider-controls label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 8px;
+
+  
+
+    background-color: transparent;
+    border: 1px solid #000;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slider-controls {
+    position: absolute;
+    top: 230px;
+    left: 310px;
+    z-index: 20;
+
+    font-size: 0;
+}
+
+.visually-hidden {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+
+    clip: rect(0, 0, 0, 0);
+}
+
+.slide {
+    display: none;
+} 
+
+.img-puncher {
+    display: flex;
+    flex-direction: column;
+
+    width: 620;
+    height: 266;
+
+    background-image: url(../img/puncher.jpg)
+}
+
+.img-driil {
+    display: flex;
+    flex-direction: column;
+
+    width: 620;
+    height: 266;
+
+    background-image: url(../img/drill.jpg)
+}
+
+#product-1:checked ~ .slider-hit #slide1,
+#product-2:checked ~ .slider-hit #slide2 
+                                            {
+  display: block;
+}
+
+#product-1:checked ~ .slider-hit label[for="product-1"],
+#product-2:checked ~ .slider-hit label[for="product-2"]
+ {
+  background-color: #ffffff;
+}
+
+#product-1 ~ .slider-hit label[for="product-1"],
+#product-2 ~ .slider-hit label[for="product-2"]
+ {
+  background-color: red;
+}
+
+
+/* слайдер перфоратор */
 
 
 
