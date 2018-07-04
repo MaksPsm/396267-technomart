@@ -75,7 +75,106 @@
             <div class="search-wrapper">
                 <div class="filter-tools">
                     <span class="filter-text">ФИЛЬТР:</span>
-                    <span class="caption-filter">ЦЕНА</span>
+                    <form class="filter" method="get" action="https://technomart.ru">
+
+                        <fieldset class="filter-item">
+                            <legend>Цена:</legend>
+
+                            <div class="range-filter">
+
+                                <div class="range-controls">
+                                    <!--элемент с ползунками-->
+                                    <div class="scale">
+                                        <!--прогресс бар - его ширина-->
+                                        <div class="bar"></div>
+                                        <!--выбранный диапазон -->
+                                    </div>
+                                    <div class="lever lever-min"></div>
+                                    <!--ползунки-->
+                                    <div class="lever lever-max"></div>
+                                </div>
+
+                                <div class="price-controls">
+                                    <!--поля ввода цены-->
+                                    <label class="min-price"> <input name="min-price" type="text" value="0"></label>
+                                    <p class="price-text">-</p>
+
+                                    <label class="max-price"> <input name="max-price" type="text" value="30000"></label>
+                                </div>
+
+                            </div>
+
+                        </fieldset>
+
+
+                        <!----ФИЛЬР ПРОИЗВОДИТЕЛИ РАБОЧИЙ НАЧАЛО        ---->
+
+
+                        <fieldset class="filter-item">
+                            <legend>
+                                производители:
+                            </legend>
+                            <div class="range-filter">
+                                <div class="range-filter-item">
+                                    <label for="filter-boch">
+              <input class="checkbox-filter" type="checkbox" name="boch" id="filter-boch" checked>
+              <span class="checkbox-custom"></span>
+              <span class="label-factory">boch</span>
+          </label>
+                                </div>
+                                <div class="range-filter-item">
+                                    <label for="filter-interscol">
+              <input class="checkbox-filter" type="checkbox" name="interscol" id="filter-interscol" >
+              <span class="checkbox-custom"></span>
+              <span class="label-factory">interscol</span>
+          </label>
+                                </div>
+                                <div class="range-filter-item">
+                                    <label for="filter-makita">
+              <input class="checkbox-filter" type="checkbox" name="makita" id="filter-makita" checked>
+              <span class="checkbox-custom"></span>
+              <span class="label-factory">makita</span>
+          </label>
+                                </div>
+                                <div class="range-filter-item">
+                                    <label for="filter-dewelt">
+              <input class="checkbox-filter" type="checkbox" name="dewelt" id="filter-dewelt" >
+              <span class="checkbox-custom"></span>
+              <span class="label-factory">dewelt</span>
+          </label>
+                                </div>
+                                <div class="range-filter-item">
+                                    <label for="filter-hitachi">
+              <input class="checkbox-filter" type="checkbox" name="hitachi" id="filter-hitachi" >
+              <span class="checkbox-custom"></span>
+              <span class="label-factory">hitachi</span>
+          </label>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset class="filter-item-radio">
+                            <legend>питание:</legend>
+                            <div class="range-filter">
+                                <div class="range-filter-item">
+                                    <label for="filter-battery">
+              <input class="checkbox-filter-radio" type="radio" name="power" id="filter-battery" checked>
+              <span class="checkbox-custom-radio"></span>
+              <span class="label-factory">аккумуляторные</span>
+          </label>
+                                </div>
+                                <div class="range-filter-item">
+                                    <label for="filter-mains">
+              <input class="checkbox-filter-radio" type="radio" name="power" id="filter-mains">
+              <span class="checkbox-custom-radio"></span>
+              <span class="label-factory">сетевые</span>
+          </label>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <button class="totals-filter" type="submit">показать</button>
+                    </form>
+                    <!--  <span class="caption-filter">ЦЕНА</span>
                     <form class="filter" method="get" action="https://technomart.ru" oninput="pointsoutput.value=pointscount.value">
                         <fieldset>
                             <input type="range" name="price0" min="0" max="30000" value="0">
@@ -125,7 +224,7 @@
                             </ul>
                         </fieldset>
                         <button class="totals-filter" type="submit">показать</button>
-                    </form>
+                    </form>  -->
 
                 </div>
                 <div class="catalog-wrapper">

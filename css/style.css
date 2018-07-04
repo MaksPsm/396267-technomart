@@ -85,6 +85,8 @@ main .container {
     align-items: center;
     color: #ffffff;
     width: 220px;
+    
+    border-bottom: 5px solid #b52933;
 
 }
 
@@ -165,13 +167,55 @@ main .container {
 
 
 .header-top form {
+    position: relative;
     width: 270px;
+    
+    margin: 0;
+    padding: 0;
+    
     margin-right: auto;
     display: flex;
     justify-content: center;
     padding-top: 14px;
-
+    padding-bottom: 14px;
 }
+
+.header-top label {
+    
+    margin-left: 45px;
+}
+
+.header-top label::before {
+    position: absolute;
+    
+    content: "";
+    
+    top: 13px;
+    left: 17px;
+    
+    width: 17px;
+    height: 17px;
+    
+    background-image: url(../img/icon-search.svg);
+    background-repeat: no-repeat;
+      opacity: 0.5;  
+}
+
+.search-header {
+   border: none;
+    background: #293449;
+    
+}
+/*search-header:active {
+   
+    background: #fff;
+} 
+
+.header-top form:focus {
+    background-color: #fff;
+}*/
+
+
 
 .bookmarks,
 .cart {
@@ -340,6 +384,8 @@ a.order:active {
     justify-content: space-around;
     align-items: center;
     margin-bottom: 60px;
+    
+    border-bottom: 4px solid #293449;
 }
 
 .navigation-item a {
@@ -750,7 +796,8 @@ a.order:active {
 .sevices-wrapper {
     display: flex;
     flex-direction: column;
-  /*  justify-content: center;*/
+  
+    margin-bottom: 100px;
 }
 
 .services-caption {
@@ -849,34 +896,31 @@ a.order:active {
     margin: 0;
     padding: 0;
     
-   
     margin-bottom: 25px;
     margin-top: 25px;
     
+   /* position: relative; */
 }
 
 .delivery-far li {
     margin-top: 10px;
-}
-
-.company-ony {
+    
     position: relative;
-    padding-left: 25px;
 }
 
-.business-line::before {
-    position: absolute;
+.business-line::before,
+.trading::before,
+.expedition::before {
+    position: absolute;    
+  content: "";
     
-   /* top: 6px;
-    left: 20px; */
-    
-    width: 5px; 
-    height: 2px;
-    
-}
+    top: 10px;
+    left: 6px;
 
-.business-line::before {
-    margin-left: 10px;
+  width: 25px;
+  height: 2px;
+
+  background: red;
 }
 
 .contact {
@@ -913,8 +957,6 @@ a.order:active {
     background-color: #ba2732;
 }
 
-.main-footer {
-}
 
 .menu-info,
 .footer-center {
@@ -1226,12 +1268,12 @@ a.order:active {
     padding-left: 50px;
 }
 
-.bread-catalog::before {
+.bread-catalog::after {
     content: "";
     
     position: absolute;
-    top: 2px;
-    left: 0px;
+    top: 1px;
+    left: 0;
     
     width: 12px;
     height: 15px;
@@ -1250,7 +1292,7 @@ a.order:active {
     
     position: absolute;
     top: 2px;
-    left: 20px;
+    left: 30px;
     
     width: 8px;
     height: 12px;
@@ -1259,9 +1301,42 @@ a.order:active {
     background-repeat: no-repeat;
     background-position: 0 0;
     
-    opacity: 0.4;
+    opacity: 1;
     
    
+}
+
+.bread-tools::before {
+    content: "";
+    
+    position: absolute;
+    top: 2px;
+    left: -23px;
+    
+    width: 8px;
+    height: 12px;
+    
+    background-image: url(../img/icon-right-small.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    
+    opacity: 1;
+}
+
+.breadcrumbs-current::before {
+    content: "";
+    
+    position: absolute;
+    top: 5px;
+    left: -21px;
+    
+    width: 8px;
+    height: 12px;
+    
+    background-image: url(../img/icon-right-small.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    
 }
 
 .page-catalog {
@@ -1316,14 +1391,6 @@ a.order:active {
     margin-left: 20px;
 }
 
-.totals-filter {
-    font-size: 13px;
-    line-height: 18px;
-    font-weight: 400;
-    
-    padding: 10px 38px;
-    
-}
 
 .sorting {
     display: flex;
@@ -1368,12 +1435,12 @@ a.order:active {
     padding-top: 10px;
 }
 
-.caption-filter,
-legend {
+/*.caption-filter
+ {
     font-size: 17px;
     line-height: 30px;
     font-weight: 700;
-    color: #000000;
+    color: #000000; */
     
     padding-bottom: 15px;
     padding-top: 15px;
@@ -1531,25 +1598,8 @@ input[type="radio"].visually-hidden {
 .delivery-far li {
     padding-left: 55px;
     padding-right: 50px; 
-    
-    
+        
 }
- 
-
-.delivery-far li::before
- {
-  position: absolute;    
-  content: "";
-    
-    top: 10px;
-    left: 0;
-
-  width: 50px;
-  height: 2px;
-
-  background: red;
-}
-
 
 
 /* новая запись */
@@ -1583,9 +1633,10 @@ input[type="radio"].visually-hidden {
     z-index:10;
 }
 
-.goods-item .actions .buy,
-.goods-item .actions .bookmark{
-   display:block;
+
+.buy,
+.bookmark {
+    display:block;
     width:129px;
     margin:0 auto;
     margin-bottom:7px;
@@ -1603,8 +1654,7 @@ input[type="radio"].visually-hidden {
     border-radius:3px;
 }
 
-
-.goods-item .actions .bookmark{
+ .bookmark {
     color:#32425c;
     background:white;
     border-bottom-color:#63a63e;
@@ -1619,7 +1669,19 @@ input[type="radio"].visually-hidden {
 }
 
 .buy:hover {
-    background-color:#ba2732; 
+    background-color:#5fbb2d; 
+}
+
+.buy:active {
+    background-color:#518534;
+}
+
+.bookmark:hover {
+    border-color: #32425c;
+}
+
+.bookmark:active {
+    border-color: #c1c6ce;
 }
 
 .goods-item .image{
@@ -1843,18 +1905,22 @@ a.button  {
     flex-direction: column;
     justify-content: space-between; 
 
-    margin-right: auto;
+   width: 620px;
 
     margin: 0;
     padding: 0;
 
     list-style: none;
+    
 }
 
 .snabshot-item {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-between; 
+    
+    display: none;
+    
 }
 
 .snapshot-title {
@@ -1870,13 +1936,13 @@ a.button  {
 }
 
 .snabshot-text {
- /*   padding: 0;
-    margin: 0; 
-   margin-top: auto; */
-   margin-top: 40px; 
+ /*  padding: 0;
+    margin: 0; */
+  
+   
 }
 
-.slider-controls label {
+.services-controls label {
     display: flex;
     flex-direction: column;
 
@@ -1910,9 +1976,9 @@ a.button  {
     clip: rect(0, 0, 0, 0);
 } */
 
-.snabshot-item {
+/*.snabshot-item {
     display: none;
-}
+} */
 
 #service1:checked ~ .services-slider #delivery,
 #service2:checked ~ .services-slider #guarantee,
@@ -1942,6 +2008,294 @@ a.button  {
 #service3:checked ~ .services-slider {
  
   background-image: url("../img/kredit.png");
+}
+
+/* сложный фильр начало*/
+.filter-item {
+  margin: 0;
+  padding: 0;
+  
+  border: none;
+    
+    margin-top: 20px;
+    
+    border-bottom: 1px solid #f7f3ec;
+   
+}
+
+.range-filter { /*ширина фильтра и отст*/
+  width: 220px;
+  margin-top: 25px;
+    margin-bottom: 20px;
+}
+    
+
+.filter-item legend {  /*стили заголовка*/
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.range-controls { /*блок с ползунками*/
+    position: relative;
+    
+  height: 41px;
+    margin-bottom: 15px;
+    padding-top: 39px;
+    padding-right: 20px;
+  padding-left: 20px;
+    
+  
+  background-color: #f1f1f1;
+  
+  border-radius: 5px;
+}
+
+.range-controls .scale { /*стили шкалы*/
+  height: 2px;
+
+  background: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+
+  background: #00ca74;
+}
+
+.range-controls .lever {
+    position: absolute;
+  top: 31px;
+  left: 0;
+    
+  width: 4px;
+  height: 4px;
+  padding: 0;
+
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 #cfcfcf;
+    
+    cursor: pointer;
+}
+
+.range-controls .lever-min {
+  left: 18px;
+}
+
+.range-controls .lever-max {
+  left: 140px;
+}
+
+.price-controls {
+  font-size: 0;
+    
+    display: flex;
+    
+}
+
+.price-controls label {
+ /* display: inline-block; 
+  width: 40%; */
+    
+    
+
+
+font-size: 16px;
+  text-transform: uppercase;
+}
+
+.price-controls input {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: #283136;
+
+width: 95px;
+  padding: 8px 10px;
+   /* margin-left: 10px;*/
+    
+    border: none;
+  border-radius: 5px;
+  background: #f1f1f1;
+}
+
+.max-price {
+  text-align: right;
+}
+
+.price-text {
+    font-size: 24px;
+   /* text-align: center;*/
+  color: #283136;
+    
+    padding: 0;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*  УБРАТЬ
+.filter-factory {
+    list-style: none;
+    
+    padding: 0;
+    margin: 0;
+    
+}
+
+.filter-factory li {
+    display: flex;
+    
+   position: relative; 
+    
+}
+
+.filter-factory label {
+    margin-left: 20px;
+    
+   
+}  */
+
+
+/* ФИЛЬР ПРОИЗВОДИТЕЛИ НАЧАЛО */
+.range-filter {
+    display: flex;
+    flex-direction: column;
+}
+
+.range-filter-item {
+    margin-bottom: 10px;
+}
+
+.checkbox-filter {
+    display: none;
+    
+}
+
+.checkbox-custom {
+    position: relative;
+    
+    width: 27px;
+    height: 23px;
+    
+    margin-right: 7px;
+    
+    background-image: url(../img/checkbox-off.svg);
+    background-repeat: no-repeat;
+    
+    cursor: pointer;
+}
+
+.checkbox-custom,
+.label-factory {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.label-factory {
+    font-size: 15px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-weight: 400;
+    color: #000;
+}
+
+.checkbox-filter:checked + .checkbox-custom::before {
+    display: block;
+    position: absolute;
+    
+    content: "";
+    
+    top: 0;
+    right: 0;
+    
+    width: 27px;
+    height: 23px;
+    
+    background-image: url(../img/checkbox-on.svg);    
+    background-repeat: no-repeat;
+    
+    
+}
+
+.filter-item-radio {
+    margin: 0;
+  padding: 0;
+  
+  border: none;
+    
+    margin-top: 20px;
+}
+
+.checkbox-filter-radio {
+    display: none;
+}
+
+.checkbox-custom-radio {
+    position: relative;
+    
+    width: 20px;
+    height: 20px; 
+     
+    border-radius: 50%;
+    border: 3px solid #ccc;
+   
+}
+
+.filter-item-radio legend {  /*стили заголовка*/
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.checkbox-custom-radio,
+.label-factory {
+	display: inline-block;
+	vertical-align: middle;
+    
+    cursor: pointer;
+}
+
+.checkbox-custom-radio {
+    margin-right: 10px;
+}
+
+.checkbox-filter-radio:checked + .checkbox-custom-radio::before {
+    display: block;
+    position: absolute;
+    
+    content: "";
+    
+    top: 5px;
+    right: 5px;
+    
+    width: 10px;
+    height: 10px; 
+     
+    border-radius: 50%;
+    background-color: #ccc;
+    
+}
+
+.totals-filter {
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    
+    padding: 10px 38px;
+    
+    margin-top: 40px;
+    
+    text-transform: uppercase;
+
+  background: transparent;
+  border: 3px solid #ccc;
+  border-radius: 2px;
+  cursor: pointer;
 }
 
 
