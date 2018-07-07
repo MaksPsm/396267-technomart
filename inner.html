@@ -13,12 +13,17 @@
     <header class="main-header">
 
         <div class="header-top">
+           
             <div class="container">
                 <a class="logo-company">ТЕХНОМАРТ</a>
-                <form class="search" action="https://technomart.ru/echo" method="get">
-                    <label>Поиск:</label>
-                    <input name="search" type="search">
-                </form>
+                   <form class="search" method="get" action="https://technomart.ru/echo">
+                       <div class="forma-search"> 
+                          <input class="input-opt" type="search" name="search" placeholder="Поиск">
+                           <button class="input-button"><svg class="svg-forma" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path fill="#ffffff" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg></button>
+                        </div>
+                    </form>
+                  
+                
                 <a class="bookmarks flag" href="bookmarks.html">Закладки:</a>
                 <a class="cart basket" href="cart.html">Корзина:</a>
                 <a class="order" href="order.html">Оформить заказ</a>
@@ -37,13 +42,13 @@
                 </div>
                 <div class="order-container">
                     <a class="person name-inner" href="name.html">Равшан Джамшутович</a>
-                    <div class="personal-wrapper">
+                   <div class="personal-wrapper">  
                         <a class="personal-data" href="order.html">Мои заказы</a>
                         <!--  <span class="data-dot">
                             <svg><circle r="2" cx="3" cy="9" fill="#32425c"></circle></svg>
                             </span> -->
                         <a class="personal-data" href="personal_area.html">Личный Кабинет</a>
-                    </div>
+                    </div> 
                 </div>
             </div>
         </div>
@@ -174,57 +179,7 @@
                         </fieldset>
                         <button class="totals-filter" type="submit">показать</button>
                     </form>
-                    <!--  <span class="caption-filter">ЦЕНА</span>
-                    <form class="filter" method="get" action="https://technomart.ru" oninput="pointsoutput.value=pointscount.value">
-                        <fieldset>
-                            <input type="range" name="price0" min="0" max="30000" value="0">
-                            <output name="pointsoutput">0</output>
-                            <input type="range" name="price3000" min="0" max="30000" value="30000">
-                            <output name="pointsoutput">30000</output>
-                            <span class="min">0</span>
-                            <span class="space">-</span>
-                            <span class="max">30000</span>
-                        </fieldset>
-                        <fieldset tabindex="1">
-                            <legend>ПРОИЗВОДИТЕЛИ:</legend>
-                            <ul class="filter-factory">
-                                <li>
-                                    <input type="checkbox" name="boch" id="filter-boch" checked>
-                                    <label for="filter-boch">BOCH</label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" name="interscol" id="filter-interscol">
-                                    <label for="filter-interscol">ИНТЕРСКОЛ</label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" name="makita" id="filter-makita" checked>
-                                    <label for="filter-makita">MAKITA</label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" name="dewelt" id="filter-dewelt">
-                                    <label for="filter-dewelt">DEWELT</label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" name="hitachi" id="filter-hitachi">
-                                    <label for="filter-hitachi">HITACHI</label>
-                                </li>
-                            </ul>
-                        </fieldset>
-                        <fieldset>
-                            <legend>ПИТАНИЕ:</legend>
-                            <ul class="filter-radio">
-                                <li>
-                                    <input type="radio" name="power" value="battery" id="filter-battery" checked>
-                                    <label for="filter-battery">аккумуляторные</label>
-                                </li>
-                                <li>
-                                    <input type="radio" name="power" value="mains" id="filter-mains">
-                                    <label for="filter-mains">сетевые</label>
-                                </li>
-                            </ul>
-                        </fieldset>
-                        <button class="totals-filter" type="submit">показать</button>
-                    </form>  -->
+
 
                 </div>
                 <div class="catalog-wrapper">
@@ -423,6 +378,7 @@
         </div>
 
     </footer>
+    
 
 </body>
 
